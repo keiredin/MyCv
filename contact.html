@@ -7,6 +7,7 @@
     <title>Keiredin A. Cv</title>
 </head>
 <body>
+    <!-- ico is a photo format that used as icon for our website -->
     <hr>
 
     <table cellspacing = "20">
@@ -29,30 +30,46 @@
     <a href="https://t.me/@K3rastar" target="_blank"><img src="asset/images/tg_icon.png" width="26" height="26" alt="telegram icon">telegram</a>
     <hr>
 
-    <form action="mailto:se.keiredinaman@gmail.com" method="POST"> 
-        <!-- method is get by default -->
-        <br>
-        <label for="fNname">First Name:</label> <input type="text" name="fName" id="fNmae">
-        <br>
-        <label for="sName">Last Name:</label> <input type="text" name="sName" id="sName">
-        <br>
-        <label for="email">Email :</label> <input type="email" name="email" id="email">
-        <br>
-        What do you want to say ??
-        <br>
-        where are you from :
-        <select name="country" id="">
-            <option value="af">Africa</option>
-            <option value="as">Asia</option>
-            <option value="eu">Europe</option>
-        </select>
-        <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Submitt">
-        <br>
+    <table>
+        <form action="mailto:se.keiredinaman@gmail.com" method="POST"> 
+            <!-- method is get by default -->
+            <tr>
+                <td><label for="fNname">First Name:</label> </td>
+                <td><input type="text" name="fName" id="fNmae"></td>
+            </tr>
+            <tr>
+                <td> <label for="sName">Last Name:</label> </td>
+                <td> <input type="text" name="sName" id="sName"></td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email :</label> </td>
+                <td> <input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td> where are you from :</td>
+                <td>
+                    <select name="country" id="">
+                        <option value="af">Africa</option>
+                        <option value="as">Asia</option>
+                        <option value="eu">Europe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>What do you want to say ??</td>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submitt"></td>
+            </tr>
+           
+            
+    
+    
+        </form>
+    </table>
 
-    </form>
+
 
     
    
