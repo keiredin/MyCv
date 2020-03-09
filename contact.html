@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Keiredin A. Cv</title>
+    <link rel="icon" type="image/png" href="asset/Images/favicon.ico" >
 </head>
 <body>
-    <!-- ico is a photo format that used as icon for our website -->
     <hr>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <hr>
+
+    <!-- ico is a photo format that used as icon for our website -->
+   
 
     <table cellspacing = "20">
         <tr>
@@ -28,6 +34,7 @@
 
     <a href="https://www.facebook.com/keredin.aman.7" target="_blank"><img src="asset/images/facebook.png" width="20px" height="20px" alt="facebook icon">facebook</a>
     <a href="https://t.me/@K3rastar" target="_blank"><img src="asset/images/tg_icon.png" width="26" height="26" alt="telegram icon">telegram</a>
+    
     <hr>
 
     <table>
@@ -35,15 +42,30 @@
             <!-- method is get by default -->
             <tr>
                 <td><label for="fNname">First Name:</label> </td>
-                <td><input type="text" name="fName" id="fNmae"></td>
+                <td><input type="text" name="fName" id="fNmae" placeholder="Besiraw" 
+                    pattern= "[A-Za-z]{3,12}" title="name must contain only letter" ></td>
             </tr>
             <tr>
                 <td> <label for="sName">Last Name:</label> </td>
-                <td> <input type="text" name="sName" id="sName"></td>
+                <td> <input type="text" name="sName" id="sName" placeholder="Lemma" 
+                    pattern="[A-Za-z]{3,12}" title="name must contain only letter" ></td>
             </tr>
             <tr>
                 <td> <label for="email">Email :</label> </td>
-                <td> <input type="email" name="email" id="email"></td>
+                <td> <input type="email" name="email" id="email" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password :</label></td>
+                <td><input type="password" name="password" id="password" 
+                    pattern= "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+                    title="must contain atleast one smallcase,uppercase,number and special character and minimum lenght=8" required></td>
+            </tr>
+            <tr>
+                <td> <label for="phonenum">Phone Number:</label></td>
+                <td><input type="tel" name="phonenum" id="phonenum"
+                    pattern="0+[0-9]{9}" title="A phone number must start with 0 and must be 10 digit"></td>
             </tr>
             <tr>
                 <td> where are you from :</td>
@@ -60,7 +82,16 @@
                 <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
             </tr>
             <tr>
+                <td><label for="myDate">When do you submitt these informations? </label></td>
+                <td> <input type="date" name="myDate" step="3600" id="myDate"></td>
+            </tr>
+            <tr>
+                <td><hr></td>
+                <td><hr></td>
+            </tr>
+            <tr>
                 <td><input type="submit" value="Submitt"></td>
+                <td><input type="reset" ></td>
             </tr>
            
             
