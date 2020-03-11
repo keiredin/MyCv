@@ -8,24 +8,26 @@
     <link rel="icon" type="image/png" href="asset/Images/favicon.ico" >
 </head>
 <body>
-    <hr>
-    <a href="index.html"> Home </a>
-    <a href="contact.html"> Contact </a>
-    <a href="Gallery.html"> Gallery </a>
-    <hr>
+    <center>
+        <hr>
+        <a href="index.html"> Home </a>&nbsp;&#124;&nbsp;
+        <a href="contact.html"> Contact</a>&nbsp;&#124;&nbsp;
+        <a href="Gallery.html"> Gallery</a> &nbsp;&nbsp;
+        <hr>
+    </center>
+
 
     <!-- ico is a photo format that used as icon for our website -->
    
 
     <table cellspacing = "20">
+        
         <tr>
-            <td><img src="asset/Images/2019-02-25 11.15.10.jpg" width="327px" height="356px" alt="my profile picture"></td>
+            <td><img src="https://images.unsplash.com/photo-1554830072-52d78d0d4c18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="327px" height="356px" alt="my profile picture"></td>
             <td>
-                <h1>Keiredin Aman</h1>
-                <h3>Student, Addis Ababa institute of Technology</h3>
                 <p>Hi there,</p>
-                <p>I am Keiredin, I am average level <strong>python</strong> programmer who has been learning python for the past <em>1</em> year.
-                 i am passionate about working and studying a bunch of different programming language...
+                <p>
+                    thanks for visiting! I’m grateful that you’d like to get in touch with me.
                 </p>
             </td>
         </tr>
@@ -33,70 +35,89 @@
 
     <h3>contact me .....</h3>
 
-    <a href="https://www.facebook.com/keredin.aman.7" target="_blank"><img src="asset/images/facebook.png" width="20px" height="20px" alt="facebook icon">facebook</a>
-    <a href="https://t.me/@K3rastar" target="_blank"><img src="asset/images/tg_icon.png" width="26" height="26" alt="telegram icon">telegram</a>
-    
+    <a href="https://www.facebook.com/keredin.aman.7" target="_blank"><img src="asset/images/facebook.png" width="40px" height="40px" alt="facebook icon"></a>
+    <a href="https://t.me/@K3rastar" target="_blank"><img src="asset/images/tg_icon.png" width="40" height="40" alt="telegram icon"></a>
+    <a href="tel:0927214126"><img src="asset/Images/call_icon.png" width="46" height="46" alt=""></a>
     <hr>
 
-    <table>
-        <form action="mailto:se.keiredinaman@gmail.com" method="POST">
-            <tr>
-                <td><label for="fNname">First Name:</label> </td>
-                <td><input type="text" name="fName" id="fNmae" placeholder="Besiraw" 
-                    pattern= "[A-Za-z]{3,12}" title="name must contain only letter" ></td>
-            </tr>
-            <tr>
-                <td> <label for="sName">Last Name:</label> </td>
-                <td> <input type="text" name="sName" id="sName" placeholder="Lemma" 
-                    pattern="[A-Za-z]{3,12}" title="name must contain only letter" ></td>
-            </tr>
-            <tr>
-                <td> <label for="email">Email :</label> </td>
-                <td> <input type="email" name="email" id="email" 
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="password">Password :</label></td>
-                <td><input type="password" name="password" id="password" 
-                    pattern= "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-                    title="must contain atleast one smallcase,uppercase,number and special character and minimum lenght=8" required></td>
-            </tr>
-            <tr>
-                <td> <label for="phonenum">Phone Number:</label></td>
-                <td><input type="tel" name="phonenum" id="phonenum"
-                    pattern="0+[0-9]{9}" title="A phone number must start with 0 and must be 10 digit"></td>
-            </tr>
-            <tr>
-                <td> where are you from :</td>
-                <td>
-                    <select name="country" id="">
-                        <option value="af">Africa</option>
-                        <option value="as">Asia</option>
-                        <option value="eu">Europe</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>What do you want to say ??</td>
-                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
-            </tr>
-            <tr>
-                <td><label for="myDate">When do you submitt these informations? </label></td>
-                <td> <input type="date" name="myDate" step="3600" id="myDate"></td>
-            </tr>
-            <tr>
-                <td><hr></td>
-                <td><hr></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Submitt"></td>
-                <td><input type="reset" ></td>
-            </tr>
+    <table  width="100%">
+        
+        <tr>
+            <td>
+                <table >
+                    <caption>Fill the form below to send your comment</caption>
+                    <form action="mailto:se.keiredinaman@gmail.com" method="POST">
+                        <tr>
+                            <td><label for="fNname">First Name:</label> </td>
+                            <td><input type="text" name="fName" id="fNmae" placeholder="Besiraw" 
+                                pattern= "[A-Za-z]{3,12}" title="name must contain only letter" ></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="sName">Last Name:</label> </td>
+                            <td> <input type="text" name="sName" id="sName" placeholder="Lemma" 
+                                pattern="[A-Za-z]{3,15}" title="name must contain only letter" ></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="email">Email :</label> </td>
+                            <td> <input type="email" name="email" id="email" 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password :</label></td>
+                            <td><input type="password" name="password" id="password" 
+                                pattern= "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+                                title="must contain atleast one Smallcase,Uppercase,number and special character and minimum lenght=8" required></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="phonenum">Phone Number:</label></td>
+                            <td><input type="tel" name="phonenum" id="phonenum"
+                                pattern="0+[0-9]{9}" title="A phone number must start with 0 and must be 10 digit"></td>
+                        </tr>
+                        <tr>
+                            <td> where are you from :</td>
+                            <td>
+                                <select name="country" id="">
+                                    <option value="af">Africa</option>
+                                    <option value="as">Asia</option>
+                                    <option value="eu">Europe</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>What do you want to say ??</td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="myDate">When do you submitt these informations? </label></td>
+                            <td> <input type="date" name="myDate" step="3600" id="myDate"></td>
+                        </tr>
+                        <tr>
+                            <td><hr></td>
+                            <td><hr></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submitt"></td>
+                            <td><input type="reset" ></td>
+                        </tr>
+            
+            
+                    </form>
+                </table>
+            </td>
+            <td>
+                <div class="mapouter"><div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div>
+                    <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                </div>
+            </td>
+        </tr>
 
-
-        </form>
     </table>
+
+
 
 
 
