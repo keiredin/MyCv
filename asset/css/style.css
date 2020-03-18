@@ -3,6 +3,42 @@
     margin: 0;
 }
 
+/* navigation*/
+
+nav ul{
+    background-color:steelblue;
+    border: solid black 2px;
+    margin-bottom: 10px ;
+    text-align: center;
+}
+
+
+nav ul li{
+    display: inline-block;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    margin: 10px;
+    text-align: center;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    background-color: #ffffff;
+
+}
+nav ul li:active{
+    background-color: orange;
+}
+
+
+
+
+
 html{
 
     
@@ -21,7 +57,7 @@ html{
     width: inherit;
     padding-bottom: 20px;
     padding-top: 20px;
-    border-bottom: lightcoral 2px solid;
+    border-bottom: white 2px solid;
 }
 
 .container{
@@ -49,26 +85,10 @@ html{
     text-align: center;
 }
 
+
+
 /* Contact page*/
 
-
-
-nav ul li{
-    display: inline-block;
-
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
-    margin: 10px;
-    text-align: justify;
-}
-nav ul li a{
-    text-decoration: none;
-}
-
-nav ul li:hover{
-    background-color: #ffffff;
-
-}
 
 .top{
     width: 100%;
@@ -83,13 +103,13 @@ nav ul li:hover{
     margin-right: 50px;
 }
 .text{
+    width: 50%;
     float: left;
-    padding: 100px 0px;
+    padding-top: 100px;
     box-sizing: border-box;
 }
-.top p{
-    text-align: justify;
-}
+
+
 
 #h3 {
     clear: left;
@@ -159,3 +179,43 @@ nav ul li:hover{
     box-sizing: border-box;
     
 }
+
+/*index*/
+#textindex{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+#top-index{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+
+
+}
+
+
+.skills, .work{
+    padding: 10px;
+    width: 40%;
+    border: solid 1px white ;
+    height: 200px;
+}
+
+.criterie,.value, .job, .date{
+    width: 45%;
+    float: left;
+}
+
+.skills h3,p, .work h3,p{
+    text-align: justify;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.head{
+    font-weight: bold;
+}
+
+
+
+
+
