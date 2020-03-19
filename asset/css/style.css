@@ -63,7 +63,7 @@ html{
 .container{
     background: ffffff;
     overflow: auto;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
   
 }
@@ -182,10 +182,10 @@ html{
 
 /*index*/
 #textindex{
-    border-bottom: 2px solid white;
     margin-bottom: 20px;
 }
 #top-index{
+    padding-bottom: 20px ;
     border-bottom: 2px solid white;
     margin-bottom: 20px;
 
@@ -193,27 +193,38 @@ html{
 }
 
 
-.skills, .work{
+.skills, .work , .hobbies{
     padding: 10px;
-    width: 40%;
-    border: solid 1px white ;
+    width: 100%;
     height: 200px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
 }
 
-.criterie,.value, .job, .date{
-    width: 45%;
+.criterie,.value, .job, .date ,.sports ,.types{
+    width: 25%;
     float: left;
 }
 
-.skills h3,p, .work h3,p{
+.skills h3,p, .work h3,p ,.hobbies h3,p{
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-.head{
+.head2{
     font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.sport-type , .book-name{
+    margin-left: 20px;
+}
+.book-name{
+    font-style: italic;
+}
+
+
 
 
 
