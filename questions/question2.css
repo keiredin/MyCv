@@ -1,0 +1,41 @@
+
+body{
+    background-color: skyblue;
+    border:pink 20px solid;
+
+}
+
+
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    
+    margin: 0% 30%;
+
+
+}
+
+.container div{
+    
+    width: 30%;
+    height: 30%;
+    
+    float: left;
+
+}
+
+
+
+.one{
+    border-right: 3px black solid;
+
+}
+.two ,#one , #two, #three, #four{
+   border-bottom: 3px black solid; 
+}
