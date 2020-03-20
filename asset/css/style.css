@@ -72,10 +72,12 @@ div ul li{
     margin: 10px;
     text-align: center;
     width: fit-content;
+    list-style-type: none;
 }
 
 div ul li a{
     text-transform: uppercase;
+    
     text-decoration: none;
     color: black;
     font-weight: bold;
