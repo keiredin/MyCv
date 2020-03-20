@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    align-content: center;
+    margin: 60px;
+    
+}
+
+
+.flag{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 250px;
+ 
+    background-color: antiquewhite;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    border: black 1px solid;
+}
+
+.one,.g3,.s1,.ne3{
+    width: 100%;
+    height: 33.33%;
+    background-color: green;
+    
+}
+
+.two,.g2,.ne2,.ga2,.ga3{
+    width: 100%;
+    height: 33.33%;
+    background-color: yellow;
+    align-content: center;
+    
+}
+.twoin p{
+    position: relative;
+    font-size: 120px;
+    bottom: 25px;
+    
+}
+.twoin{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    background-color: blue;
+    bottom: 20px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+}
+
+.three,.g1,.ne1{
+    width: 100%;
+    height: 33.33%;
+    background-color: red;
+    
+}
+
+.g2in{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+.i2in{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.g2in img{
+    width: 87px; 
+    height: 87px;
+}
+
+.s2,.i1,.i2,.i3{
+    width: 100%;
+    height: 33.33%;
+    background-color: white;
+
+    
+}
+
+.s3{
+    width: 100%;
+    height: 33.33%;
+    background-color: blue;
+
+}
+
+.s1,.ga1,{
+    width: 100%;
+    height: 33.33%;
+    background-color: #32cd32;
+
+}
+
+.n1,.b1{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background-color: limegreen;
+}
+
+.n2,.b2,.mad1{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background-color: white;
+}
+.n3,.b3{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background-color: limegreen;
+}
+
+#japan, #bangladesh{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 250px;
+ 
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    border: black 1px solid;
+}
+.j1,.ban1{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    top: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+
+}
+
+.b1{
+    background-color:black;
+}
+.b2{
+    background-color: yellow;
+}
+.b3{
+    background-color: red;
+}
+ .ne2{
+     background-color: white;
+ }
+
+ .ne3{
+     background-color: blue;
+ }
+
+ #bangladesh{
+ 
+    background-color: green;
+ }
+ .ga3{
+    background-color: #0080ff;
+ }
+
+ .i1{
+    background-color: orange;
+ }
+ .i3{
+    background-color: green;
+ }
+
+ .mad2,.mad3{
+    width: 100%;
+    background-color: red;
+    height:50%;
+ }
+ .mad3{
+    background-color: green;
+ }
