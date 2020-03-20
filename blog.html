@@ -27,23 +27,35 @@
     <section>
         <p class="title"> Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ?  </p>
         <article>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
-
-
+        <p>
+            There are two types of css units: relative and absolute units. Relative units are related to the viewport or font size of an element whereas absolute units
+            are always constant or the same regardless of viewport or font size.
+        </p>
+        <p>
+                One of the absolute units is px which is common for bordering. 
+                When we set one value of px for elements, every element will have 
+                the same value. For instance, if our screen size is 1200 * 700
+                pixels, and if we place an element of width 1300px, it can’t fit with the screen, 
+                so it is necessary to scroll horizontally.This is the fundamental limitation of using px. Therefore relative units are
+                necessary.
+        </p>
+        <p>
+                Some of relative units are em and rem which are common for margin/padding and font size
+                and font size respectively. Em is relative to font size of the element whereas rem is relative to the default 
+                font size instead of the current element’s font size, the default font size of the browser is
+                usually 16px. It is common to use relative size em and rem over pixel because they would make our design more accessible.
+        </p>
+        <p>
+                In general, it is better to use relative size to styling the size of an element.
+                Even if the browser is providing zoom feature, using relative size is better.
+                The user should not be bother about how to get the zoom feature of browser, how
+                to use and adjust font display setting. Not only that but also the UI that is
+                appeared using relative size is better than using zoom feature of the browser.
+                If we set a higher default font size, it is not necessary to zoom in browser to
+                able to read the website because relative units would increase to what font size we want. 
+                Therefore, I conclude that using relative size for size styling is responsive and
+                we have to use it.
+        </p>
         </article>
         <p class="date">March 20,2020 : 8:30</p>
 
@@ -54,22 +66,28 @@
         <section>
             <p class="title"> We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ?</p>
             <article>
+
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    In almost every browser, 16px is the standard for proportional fonts,
+                    but there are some browsers like opera mini7 that have another
+                    default font size. Users can change the default value to anywhere from
+                    9px to 72px.
                 </p>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    When the default font size is 16px, which is equivalent to 1rem or 1em,
+                     so by simple calculation 200px is equal to 12.5rem.
                 </p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                
+                <p>Therefore, when we use 200px, we are trying to make the font size or something of the element 12.5rem or 12.5em.</p>
+                <p>Now let us see how the browser interpret it. The browser creates DOM Tree (Document Object Model) and
+                    each node of the tree represents html tag. After the browser created DOM Tree,
+                     it creates map of the css style found in the web pages, which is
+                    called CSS Object Model (CSSOM). Render tree is formed by combining DOM and CSSOM trees,
+                     that is ready to be rendered.</p>
+                <p>The browser traverses each node of DOM tree starting from the root and select nodes which will be omitted/visible.
+                    For each visible node, appropriate CSSOM rules will be matched. After the browser finds which rules apply to which 
+                    element, it calculates and then display the result effect on the screen.
                 </p>
-    
     
             </article>
             <p class="date">April 20,2020 : 8:30</p>
@@ -81,23 +99,35 @@
     <section>
         <p class="title">  The specific changes in css3 </p>
         <article>
-            <h3>1.Initial Letter</h3>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            </p>
 
+            <p>Below is the major specific changes in CSS3.</p>
+            <p><strong>Text Shadow:</strong> Text shadow property allows to add drop shadows to the text on a webpage.
+                This is done by image or duplicating text element and then positioning it properly.</p>
+            <p><strong>Box Shadow:</strong> It allows to create a drop shadow for an element. Most of the time this effect is done by using repeated
+                image around the element, but because of box shadow that is done with a single line of code.</p>
+            <p>
+                <strong>Border Image:</strong> It is the ability to swap out a border with an image. It allows to specify an
+                image to display instead of a plain solid colored border.
+            </p>
+            <p><strong>Rounded Corners:</strong> Before css3 a lot of code was required to create a rounded corner. Give attention on height,
+                width and positioning is very boring. CSS3 introduces border radius property which gives the same rounded
+            corner effect.
+            </p>
+            <p><strong>Selectors:</strong> CSS3 introduce some new selectors. By using these selectors it is possible to choose DOM
+                elements based on their attributes, so it might not necessary to specify classes and IDs for every
+                element. Instead of that utilizing the attribute field to style them.</p>
+            <p><strong>Web Fonts:</strong> CSS3 introduces embedding any custom font on a webpage. Web pages
+                render only fonts that are supported by the browser or client machine.</p>
+            <p><strong>Multicolumn Layout: </strong> Most of webpages are made by columns or boxes and these boxes are adjusted by designers.
+                Multicolumn layout simplify this problem and allow to specify only the number of columns and then they
+                will be formed.
+            </p>
+            <p>
+                <strong>Transform:</strong> It enables to rotate web elements on a webpage. Before CSS3 JavaScript was required 
+                to rotate an element and they consume more resources, so CSS3 simplify this by introduce transform
+                attribute.
+            </p>
+            
 
         </article>
         <p class="date">april 30,2020 : 8:30</p>
@@ -107,6 +137,10 @@
 
 
 </div>
+
+<footer>
+    <p>Copyright © 2020 Keiredin Aman. All rights reserved.</p>
+</footer>
 
     
 </body>

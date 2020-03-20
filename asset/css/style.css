@@ -7,15 +7,17 @@ body{
 
     width: 100%;
     height: fit-content;
-    background-color: skyblue;
+    background-color: turquoise;
     border: solid 10px lightgray;
     margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 /* navigation*/
 
 nav ul{
-    background-color:steelblue;
+    background-color: #F0E995;
     border: solid black 2px;
     margin-bottom: 10px ;
     text-align: center;
@@ -95,10 +97,14 @@ header{
 }
 
 section{
+    text-align: center;
+    width: 80%;
+    margin: 10%;
     margin-top: 50px;
-    border: solid 1px black;
-    padding: 5px 30px;
+    border: solid 2px white;
+    padding:  30px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
 }
 
 article{
@@ -295,6 +301,18 @@ article{
 }
 .book-name{
     font-style: italic;
+}
+
+
+
+
+footer{
+    
+    font-style: italic;
+}
+footer p{
+    text-align: center;
+
 }
 
 
