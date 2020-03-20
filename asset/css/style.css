@@ -44,7 +44,10 @@ nav ul li:hover{
 
 }
 nav ul li:active{
-    background-color: orange;
+    background-color: orangered;
+}
+nav ul li:visited{
+    background-color:red;
 }
 
 #question ul{
