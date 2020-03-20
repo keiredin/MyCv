@@ -6,6 +6,7 @@
 body{
     align-content: center;
     margin: 60px;
+    background-color: skyblue;
     
 }
 h1{
@@ -29,7 +30,7 @@ h1{
   
 }
 .caption{
-    text-align: center;
+    text-align: justify;
 }
 
 
